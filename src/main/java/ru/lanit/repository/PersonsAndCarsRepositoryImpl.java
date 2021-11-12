@@ -65,12 +65,12 @@ public class PersonsAndCarsRepositoryImpl implements PersonsAndCarsRepository {
 
     @Override
     public Statistics getStatistics() {
-        Statistics statistics = Statistics.STATISTICS;
-        statistics.setPersonCount((long) persons.size());
-        statistics.setPersonWithCarsCount((long) personsWithCars.size());
-        statistics.setCarCount((long) cars.size());
-        statistics.setUniqueVendorCount((long) uniqueVendor.size());
-        return statistics;
+        return new Statistics(
+                (long) persons.size(),
+                (long) personsWithCars.size(),
+                (long) cars.size(),
+                (long) uniqueVendor.size()
+        );
     }
 
     @Override

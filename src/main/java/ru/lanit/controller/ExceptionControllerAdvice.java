@@ -8,7 +8,7 @@ import ru.lanit.exception.NotFoundException;
 import ru.lanit.exception.InvalidDataException;
 
 @ControllerAdvice
-public class ExceptionControllerAdvance {
+public class ExceptionControllerAdvice {
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<String> handleNotFound(NotFoundException e) {

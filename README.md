@@ -49,7 +49,7 @@
 
 **Response Body:** 
 
-    объект PersonWithCars    
+    объект PersonWithCars
     {
         id: Long (not null, уникальный),
         name: String (not null),
